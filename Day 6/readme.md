@@ -1,0 +1,1 @@
+Today I learnt how to create functions in python and solved some leetcpde problems based on two pointers
