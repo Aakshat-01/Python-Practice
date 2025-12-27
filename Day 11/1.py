@@ -100,3 +100,15 @@ while True:
         s1.IBP(d,p)
     elif op==4:
         s1.DAS()
+    elif op==5:
+        s1.DAE()
+    elif op==6:
+        p=int(input("Enter data position to be deleted after:"))
+        s1.DBP(p)
+    elif op==8:
+        s1.display()
+    elif op==7:
+        val=input("Enter data value to be deleted:")
+        s1.DBV(val)
+    else:
+        print("Invalid Option")
