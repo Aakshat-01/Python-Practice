@@ -48,3 +48,29 @@ class SLL:
             print(t.data, end="->")
             t=t.next
         print()
+    def IBP(self,d,p):
+        nn=Node(d)
+        if self.head==None:
+            self.head=nn
+            self.tail=nn
+        else:
+            t=self.head
+            c=1
+            while c<p-1:
+                t=t.next
+                c+=1
+            curr=t.next
+            t.next=nn
+            nn.next=curr
+
+    def DBP(self,p):
+        if self.head==None:
+            print("SLL is empty")
+        else:
+            t=self.head
+            c=1
+            while c<p-1:
+                t=t.next
+                c+=1
+            t.next=t.next.next
+            self.tail=t
