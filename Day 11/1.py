@@ -74,3 +74,29 @@ class SLL:
                 c+=1
             t.next=t.next.next
             self.tail=t
+    def DBV(self,val):
+        nn=Node(d)
+        if self.head==None:
+            self.head=nn
+            self.tail=nn
+        else:
+            t=self.head
+            while t.next.data != val:
+                t=t.next
+            t.next=t.next.next
+        
+s1=SLL()
+while True:
+    op=int(input("1.IAS  2.IAE  3.IBP  4.DAS  5.DAE  6.DBP  7.DBV  :--"))
+    if op==1:
+        d=input("Enter data for IAS:")
+        s1.IAS(d)
+    elif op==2:
+        d=input("Enter data for IAE:")
+        s1.IAE(d)
+    elif op==3:
+        d=input("Enter data for IAB:")
+        p=int(input("Enter position for data to be inserted :"))
+        s1.IBP(d,p)
+    elif op==4:
+        s1.DAS()
