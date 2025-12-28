@@ -14,3 +14,10 @@ class ElectricCar(Car):
         self.battery_size=battery_size
 
 
+my_tesla=ElectricCar("Tesla","Model S","85kWh")
+# print(my_tesla.brand)
+my_car=Car("Toyota","Corolla")
+print(my_car.__brand)
+# print(my_car.model)
+# print(my_car.fullname())
+
