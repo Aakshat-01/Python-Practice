@@ -7,7 +7,7 @@ g={
     "f":["d"]
 }
 
-# #BFS
+# #BFS in Graph
 # q,v,r=['d'],{'d'},['d']
 # while q:
 #     p=q.pop(0)
@@ -18,7 +18,7 @@ g={
 #             r.append(n)
 # print(r)
 
-#DFS
+#DFS in Graph
 def dfs(g,n,v,r):
     if n not in v:
         v.add(n)
