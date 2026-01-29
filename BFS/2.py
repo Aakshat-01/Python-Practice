@@ -1,6 +1,4 @@
-#LeetCode PRoblem 200 using DFS 
-
-#Number of Islands
+#LeetCode PRoblem 200 using DFS  #Number of Islands
 
 
 class Solution:
